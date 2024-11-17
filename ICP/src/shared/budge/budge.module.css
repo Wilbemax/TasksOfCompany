@@ -1,0 +1,42 @@
+.rotate{
+    transform: rotate(180deg);
+
+}
+
+.staticLineWrapper{
+	width: 360px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 28px;
+    font-size: 14px;
+}
+.lineWrap{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.staticLine{
+	position: relative;
+	width: 126.5px;
+	height: 1.6px;
+	background-color: #898290;
+	bottom: -15px;
+}
+.budge{
+	position: relative;
+	z-index: 2;
+	bottom: -2px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	border-radius: 50px;
+	padding: 3px 5px;
+	color: #fff;
+	border: 2px solid #fff;
+}
+.statArrow{
+	display: block;
+}

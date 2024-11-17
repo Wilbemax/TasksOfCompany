@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.search{
+    width: 100%;
+    border-radius: 5px;
+    max-width: 400px;
+    background: #88888e;
+    font-size: 18px;
+    color: #fff;
+    padding: .2rem 1rem;
+}
+
+.card-container {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.error{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{ 
+    width: 300px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px black solid;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.card p {
+    margin-bottom: .4rem;
+}
+
+.card:hover{
+    background: #d3cece;
+}
+.card-title{ 
+    padding-bottom: .5rem;
+    font-size: 21px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.checked {
+    background: #695c5c;
+    color: #fff;
+    border: 1px #695c5c solid;
+    transition: all .3s ease-in-out;
+}
+.checked:hover{
+    background: #4f4545;
+}

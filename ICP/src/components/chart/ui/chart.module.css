@@ -1,0 +1,156 @@
+.wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #898290;
+}
+
+.menu {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.lines {
+	display: flex;
+	align-items: flex-end;
+	height: 400px;
+}
+.charts {
+	display: flex;
+	align-items: flex-end;
+	/* justify-content: space-between; */
+	gap: 60px;
+	height: 400px;
+}
+
+.chart {
+	/* height: 300px; */
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 80px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	text-align: center;
+}
+
+
+/*  */
+
+
+
+/*  */
+
+
+.lineDown::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-image: url('../../../assets/Arrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: -5px;
+}
+
+.row1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4ab6e8;
+	color: #fff;
+	font-size: 12px;
+}
+
+.row1::before {
+	height: 100%;
+
+	border: 1px solid #000;
+}
+.row2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #aa6fac;
+	color: #fff;
+	font-size: 12px;
+}
+
+.row3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e85498;
+	color: #fff;
+	font-size: 12px;
+}
+
+
+.normative {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 80px;
+	height: 100%;
+	background: repeating-linear-gradient(
+		135deg,
+		#4ab6e8,
+		#4ab6e8 14px,
+		transparent 10px,
+		transparent 20px
+	);
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.normative_bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: #000;
+}
+
+.normative_text {
+	font-weight: 700;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #898290;
+}
+
+.list{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.item{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #898290;
+	font-weight: 400;
+}
+
+.color{
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+}
