@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	padding: 2rem;
+	width: 100%;
+	max-width: 1120px;
+}
+
+.faq {
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 1.5rem;
+}
+
+.accordion .item {
+	border-bottom: 2px solid #242424;
+}
+
+.accordion .title {
+	display: block;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+.accordion .title:hover {
+	background-color: rgba(94, 94, 94, 0.1);
+}
+
+.accordion .title::before {
+	position: absolute;
+	content: '';
+	right: 14px;
+	top: 50%;
+	width: 15px;
+	height: 2px;
+	background: #ffffff;
+	transform: translateY(-50%);
+}
+
+.accordion .title::after {
+	position: absolute;
+	content: '';
+	right: 20px;
+	top: 35%;
+	width: 2px;
+	height: 15px;
+	background: #ffffff;
+	transition: all 0.3s ease-out;
+}
+.accordion .title.active::after {
+	opacity: 0;
+}
+.accordion .box {
+	overflow: hidden;
+	max-height: 0;
+	transition: all 0.3s ease-out;
+	opacity: 0;
+	padding: 0 1rem;
+}
+
+.accordion .title.active + .box {
+	max-height: 200px;
+	opacity: 1;
+}
+
+.accordion .text {
+	font-weight: 400;
+	color: #d2d2d2;
+	font-size: 16px;
+	padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+	.faq {
+		font-size: 32px;
+	}
+	.accordion .title {
+		font-size: 16px;
+		padding: 0.75rem;
+	}
+	.accordion .text {
+		font-size: 14px;
+	}
+}
